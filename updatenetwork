@@ -1,0 +1,14 @@
+#run PS as admin
+# get to the C drive type: cd.. <enter> cd.. <enter> 
+
+
+#Type 
+
+Get-NetConnectionProfile 
+
+#Gather network info, you will need it for the following cmd
+
+Set-NetConnectionProfile -InterfaceIndex 4 -NetworkCategory Private
+
+#you can update Private, or Public tag. 
+
